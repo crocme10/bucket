@@ -1,5 +1,7 @@
 <template>
-  <item />
+  <ul>
+    <item v-bind:item="{ url: 10 }"/>
+  </ul>
 </template>
 
 <script>
