@@ -1,13 +1,18 @@
 <template>
-  <item-list />
+  <div class="container mx-auto py-24 px-4">
+    <progress-bar />
+    <item-list />
+  </div>
 </template>
 
 <script>
-import ItemList from './views/ItemList.vue'
+import ProgressBar from '@/components/ProgressBar.vue'
+import ItemList from '@/views/ItemList.vue'
 
 export default {
   components: {
-    ItemList
+    ItemList,
+    ProgressBar
   }
 }
 </script>
