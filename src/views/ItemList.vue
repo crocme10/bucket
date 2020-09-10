@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <item v-bind:item="{ url: 10 }"/>
+    <item v-for='item in items' :key='item.id' />
   </ul>
 </template>
 
@@ -10,6 +10,11 @@ import Item from '../components/Item.vue'
 export default {
   components: {
     Item
+  },
+  data() {
+    return {
+      items: window.items
+    }
   }
 }
 </script>
